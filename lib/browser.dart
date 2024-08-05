@@ -23,7 +23,11 @@ class Browser extends StatefulWidget {
   State<Browser> createState() => _BrowserState();
 }
 
+#报错了，The following ProviderNotFoundException was thrown building 
+#Browser(dirty, dependencies: [Directionality, MediaQuery, _LocalizationsScope-[GlobalKey#b5c00]], state: _BrowserState#19a05):
+#根本原因是SingleTickerProviderStateMixin 被废弃了...老代码没人更新维护是个大问题了
 class _BrowserState extends State<Browser> with SingleTickerProviderStateMixin {
+
   static const platform =
       MethodChannel('com.pichillilorenzo.flutter_browser.intent_data');
 
