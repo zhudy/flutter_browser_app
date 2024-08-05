@@ -90,7 +90,7 @@ class CustomPopupDialog extends StatefulWidget {
 }
 
 class _CustomPopupDialogState extends State<CustomPopupDialog>
-    with SingleTickerProviderStateMixin {
+    with TickerProviderStateMixin {
   late AnimationController _slideController;
   late Animation<Offset> _offsetSlideAnimation;
 

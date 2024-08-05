@@ -60,7 +60,7 @@ class TabViewer extends StatefulWidget {
 }
 
 class _TabViewerState extends State<TabViewer>
-    with SingleTickerProviderStateMixin {
+    with TickerProviderStateMixin {
   List<double> positions = [];
   int focusedIndex = 0;
   bool initialized = false;

@@ -38,7 +38,7 @@ class WebViewTabAppBar extends StatefulWidget {
 }
 
 class _WebViewTabAppBarState extends State<WebViewTabAppBar>
-    with SingleTickerProviderStateMixin {
+    with TickerProviderStateMixin {
   TextEditingController? _searchController = TextEditingController();
   FocusNode? _focusNode;
 
