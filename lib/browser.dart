@@ -75,11 +75,6 @@ class _BrowserState extends State<Browser> with TickerProviderStateMixin {
     precacheImage(const AssetImage("assets/icon/icon.png"), context);
   }
 
-  @override
-  Widget build(BuildContext context) {
-    return _buildBrowser();
-  }
-
   Widget _buildBrowser() {
     var currentWebViewModel = Provider.of<WebViewModel>(context, listen: true);
     var browserModel = Provider.of<BrowserModel>(context, listen: true);
@@ -101,6 +96,11 @@ class _BrowserState extends State<Browser> with TickerProviderStateMixin {
         canShowTabScroller ? _buildWebViewTabsViewer() : Container()
       ],
     );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return _buildBrowser();
   }
 
   Widget _buildWebViewTabs() {
