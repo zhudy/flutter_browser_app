@@ -100,7 +100,9 @@ class _BrowserState extends State<Browser> with TickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
-    return _buildBrowser();
+    builder: (context, child) {
+      return _buildBrowser();
+    }
   }
 
   Widget _buildWebViewTabs() {
