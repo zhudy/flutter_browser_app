@@ -31,7 +31,7 @@ import '../webview_tab.dart';
 class WebViewTabAppBar extends StatefulWidget {
   final void Function()? showFindOnPage;
 
-  const WebViewTabAppBar({Key? key, this.showFindOnPage}) : super(key: key);
+  const WebViewTabAppBar({super.key, this.showFindOnPage});
 
   @override
   State<WebViewTabAppBar> createState() => _WebViewTabAppBarState();
